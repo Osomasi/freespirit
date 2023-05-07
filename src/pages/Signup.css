@@ -1,0 +1,47 @@
+body{
+    /* make the background colour from the top left to bottom right gradient, black to grey */
+    background: linear-gradient(to bottom right, #000000, #3e3d3d);
+}
+
+
+.signup__image--container{
+    background-image: url(../images/logo.jpg);
+    height: 100vh;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: #000000 0px 0px 10px 0px;
+}
+
+.signup__form--container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    color: white;
+}
+
+.login__image--container{
+    background-image: url(../images/logo.jpg);
+    height: 100vh;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.login__form--container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    color: white;
+}
+
+/* Hide image on smaller screens */
+@media screen and (max-width:756px){
+    .signup__image--container,
+    .login__image--container{
+        display: none;
+    }
+}
